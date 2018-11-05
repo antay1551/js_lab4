@@ -63,7 +63,6 @@ var figure = null;
     }
 		
 	function change(){
-		location.reload();
 		var selind = document.getElementById("color").options.selectedIndex;console.log(selind);
 		var txt= document.getElementById("color").options[selind].text;console.log(txt);
 		var colorFigure;
@@ -106,4 +105,5 @@ var figure = null;
 
 		var serialObj = JSON.stringify(obj);
 		localStorage.setItem("value", serialObj);
+		init();
 }
